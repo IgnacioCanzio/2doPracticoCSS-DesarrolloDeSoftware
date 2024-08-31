@@ -1,1 +1,1 @@
-# 2doPracticoCSS-DesarrolloDeSoftware
+Este es el 2do trabajo práctico de desarrollo de software. El mismo corresponde a la hoja de estilos CSS. Para poder ejecutar el codigo es necesario descargar el repositorio, descomprimirlo en una carpeta y ejecutar el archivo .html llamado "trabajo2DS" con su navegador de preferencia. Asegurese de tener también descargado el archivo .css con el mismo nombre.
