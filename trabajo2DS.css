@@ -1,0 +1,153 @@
+.blockquote-style-1 {
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgb(77, 71, 71);
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+
+    text-align: center;
+
+
+}
+
+.blockquote-style-2 {
+     color: rgb(94, 94, 94);
+     font-size: 13px;
+     padding: 20px;
+     text-align: left;
+     text-transform: uppercase;
+     text-decoration: underline;
+
+}
+
+.seccion {
+    padding: 20px;
+    color: gray;
+}
+
+.linea-inferior {
+    border-bottom: 2px solid gray; /* Línea inferior de 2px y color negro */
+    margin-bottom: 20px; /* Espacio debajo de la línea */
+}
+
+.cita {
+    font-style: italic; /* Aplica estilo cursivo al texto */
+    color: #555; /* Color de texto */
+    padding: 10px 20px; /* Espacio interno para la cita */
+    margin: 10px 0; /* Espacio superior e inferior */
+    background-color: #f8f8f8; /* Color de fondo */
+    border-left: 5px solid #ccc; /* Línea vertical a la izquierda */
+}
+.caja-texto {
+    padding: 20px; /* Espacio interno de la caja */
+    margin: 20px; /* Espacio externo para separar la caja de otros elementos */
+    background-color: #f3e6c1; /* Color de fondo de la caja */
+    border: 1px solid black; /* Borde de la caja */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 10px 10px 10px rgba(21, 21, 21, 0.1); /* Sombra para dar efecto de elevación */
+}
+
+.caja-texto2 {
+    padding: 20px; /* Espacio interno de la caja */
+    margin: 20px; /* Espacio externo para separar la caja de otros elementos */
+    background-color: #f1eee5; /* Color de fondo de la caja */
+    border: 3px solid black; /* Borde de la caja */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 10px 10px 10px rgba(21, 21, 21, 0.1); /* Sombra para dar efecto de elevación */
+}
+.relativo {
+    position: relative; /* Define la posición relativa */
+    top: 20px; /* Ajusta la posición desde arriba */
+    left: 20px; /* Ajusta la posición desde la izquierda */
+    background-color: #e0f7fa; /* Color de fondo */
+    padding: 60px; /* Espacio interno */
+    border: 1px solid #00796b; /* Borde para identificar el contenedor */
+}
+
+.absoluto {
+    position: absolute; /* Define la posición absoluta */
+    bottom:0px;
+    right: 17px; 
+    background-color: #ffccbc; /* Color de fondo */
+    padding: 8px; /* Espacio interno */
+    border: 1px solid #d32f2f; /* Borde para distinguir la caja absoluta */
+}
+
+.contenido {
+    width: 80%; /* Ancho de la sección por defecto */
+    padding: 20px; /* Padding por defecto */
+    margin: 20px auto; /* Centrar la sección */
+    background-color: #f9f9f9; /* Color de fondo de la sección */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Media Query para pantallas con ancho máximo de 768px */
+@media (max-width: 768px) {
+    body {
+        background-color: #6f86b8; /* Cambia el color de fondo del body en pantallas pequeñas */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduce el tamaño de la fuente del encabezado h1 en pantallas pequeñas */
+    }
+
+    .contenido {
+        width: 90%; /* Ajusta el ancho de la sección en dispositivos móviles */
+        padding: 10px; /* Reduce el padding en dispositivos móviles */
+        margin: 10px auto; /* Ajusta el margen para centrar la sección y evitar solapamientos */
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 10px; /* Espacio interno del contenedor */
+  }
+  
+  .grid-item {
+    background-color: #f0f0f0; /* Fondo de los elementos */
+    padding: 20px; /* Espacio interno de los elementos */
+    text-align: center; /* Alineación del texto */
+    border: 1px solid #ccc; /* Borde de los elementos */
+  }
+
+  .movimientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+  }
+  
+  .animacion {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* Color inicial */
+    transition: background-color 0.5s ease; /* Transición de color */
+  }
+  
+  .animacion:hover {
+    background-color: #2ecc71; /* Color al hacer hover */
+  }
+  
+  .mover {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    animation: mover 2s linear infinite; /* Aplicar la animación */
+    border-radius: 50%;
+  }
+  
+  @keyframes mover {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
